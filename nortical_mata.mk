@@ -1,6 +1,6 @@
-# Inherit some common Lineage stuff.
+# Inherit some common Nortical stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/nortical/config/common_full_phone.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
@@ -8,15 +8,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 # Vendor blobs
 $(call inherit-product, vendor/essential/mata/mata-vendor.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Device
 $(call inherit-product, device/essential/mata/device.mk)
 
 # Device identifiers
 PRODUCT_DEVICE := mata
-PRODUCT_NAME := lineage_mata
+PRODUCT_NAME := nortical_mata
 PRODUCT_BRAND := essential
 PRODUCT_MODEL := PH-1
 PRODUCT_MANUFACTURER := Essential Products
